@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   #  TODO: you may optionally add code here  #
   ############################################
   
+	has_and_belongs_to_many :locations
   def to_hash
     {
       :id => self.id,
