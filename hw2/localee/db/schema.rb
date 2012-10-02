@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(:version => 20121001105636) do
     t.integer "location_id"
   end
 
+  add_index "locations_users", ["user_id", "location_id"], :name => "index_locations_users_on_user_id_and_location_id", :unique => true
+
   create_table "posts", :force => true do |t|
     t.string   "text"
     t.integer  "user_id",     :null => false

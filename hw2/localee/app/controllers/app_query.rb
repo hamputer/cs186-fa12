@@ -83,6 +83,12 @@ class AppQuery
   # Output: None
   def get_stream_for_user(user_id)
     @posts = []
+		User.find(user_id).locations.each do |location|
+			location.posts.each do |post|
+				@posts << post.to_hash
+			end
+		end
+		@posts.sort {|x,y| y[:created_at] <=> x[:created_at]} 
   end
 
   # Purpose: Retrieve the locations within a GPS bounding box
@@ -105,6 +111,15 @@ class AppQuery
   # Output: None
   def get_nearby_locations(nelat, nelng, swlat, swlng, user_id)
     @locations = []
+		Location.all.each do |location|
+			if location.latitude <= nelat and location.longitude <= nelng and location.latitude >= swlat and location.longitude >= swlng
+				l = location.to_hash
+				l[:follows] = User.find(user_id).locations.include?(location)
+				@locations << l
+			end
+		end
+		@locations.sort {|x,y| x[:latitude] <=> y[:latitude]}
+		@locations = @locations[0..49]
   end
 
   # Purpose: Create a new location
@@ -134,7 +149,7 @@ class AppQuery
   #       we may call it multiple times to test your schema/models.
   #       Your schema/models/code should prevent corruption of the database.
   def follow_location(user_id, location_id)
-		User.find(user_id).locations << Location.find(location_id)
+		User.find(user_id).locations<< Location.find(location_id)
   end
 
   # Purpose: The current user unfollows a location

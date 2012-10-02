@@ -16,8 +16,8 @@ class User < ActiveRecord::Base
   #  TODO: you may optionally add code here  #
   ############################################
   
-	has_many :locations
-	has_many :posts
+	has_and_belongs_to_many :locations
+	validates_uniqueness_of :user_id, :scope => :location_id
   def to_hash
     {
       :id => self.id,
