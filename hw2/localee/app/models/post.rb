@@ -15,4 +15,15 @@ class Post < ActiveRecord::Base
 			:location => Location.find(self.location_id).to_hash
     }
   end
+	def hash
+    custom_unique_id.hash
+  end
+	
+	def eql?(comparee)
+    self == comparee
+  end
+
+	def ==(comparee)
+    self.custom_unique_id == comparee.custom_unique_id
+  end
 end

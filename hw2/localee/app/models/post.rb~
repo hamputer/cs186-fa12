@@ -10,7 +10,7 @@ class Post < ActiveRecord::Base
     {
       :author_id => self.user_id,
       :author => User.find(self.user_id).to_hash[:name],
-			:text => self.text
+			:text => self.text,
       :created_at => self.created_at,
 			:location => Location.find(self.location_id).to_hash
     }

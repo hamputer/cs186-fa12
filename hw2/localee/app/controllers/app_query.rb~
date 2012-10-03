@@ -61,7 +61,7 @@ class AppQuery
 		Location.find(location_id).posts.each do |post|
 			@posts << post.to_hash
 		end
-		@posts.sort {|x,y| y[:created_at] <=> x[:created_at]} 
+		@posts.sort! {|x,y| y[:created_at] <=> x[:created_at]} 
   end
 
   # Purpose: Show the current user's stream of posts from all the locations the user follows
@@ -88,7 +88,8 @@ class AppQuery
 				@posts << post.to_hash
 			end
 		end
-		@posts.sort {|x,y| y[:created_at] <=> x[:created_at]} 
+		
+		@posts.sort! {|x,y| y[:created_at] <=> x[:created_at]} 
   end
 
   # Purpose: Retrieve the locations within a GPS bounding box
@@ -112,13 +113,13 @@ class AppQuery
   def get_nearby_locations(nelat, nelng, swlat, swlng, user_id)
     @locations = []
 		Location.all.each do |location|
-			if location.latitude <= nelat and location.longitude <= nelng and location.latitude >= swlat and location.longitude >= swlng
+			if location.latitude <= nelat.to_f and location.longitude <= nelng.to_f and location.latitude >= swlat.to_f and location.longitude >= swlng.to_f
 				l = location.to_hash
 				l[:follows] = User.find(user_id).locations.include?(location)
 				@locations << l
 			end
 		end
-		@locations.sort {|x,y| x[:latitude] <=> y[:latitude]}
+		@locations.sort! {|x,y| x[:latitude] <=> y[:latitude]}
 		@locations = @locations[0..49]
   end
 
@@ -135,8 +136,8 @@ class AppQuery
   # Assign: None
   # Output: true if the creation is successful, false otherwise
   def create_location(location_hash={})
-		@location = Location.new(location_hash)
-    @location.save
+		location = Location.new(location_hash)
+    location.save
   end
 
   # Purpose: The current user follows a location
@@ -179,9 +180,9 @@ class AppQuery
   # Output: true if the creation is successful, false otherwise
   def create_post(user_id, post_hash={})
 		post_hash[:user_id] = user_id
-    @post = Post.new(post_hash)
-		Location.find(post_hash[:location_id]).posts << @post
-    @post.save
+    post = Post.new(post_hash)
+		Location.find(post_hash[:location_id]).posts << post
+    post.save
   end
 
   # Purpose: Create a new user
@@ -271,7 +272,7 @@ class AppQuery
   #   * name - name of the user
   #   * num_posts - number of posts the user has created
   def top_users_posts_sql
-    "SELECT '' AS name, 0 AS num_posts FROM users WHERE 1=2"
+    "SELECT name,COUNT(*) AS num_posts FROM users,posts WHERE users.id = posts.user_id GROUP BY user_id ORDER BY num_posts DESC LIMIT 5"
   end
 
   # Retrieve the top 5 locations with the most unique posters. Only retrieve locations with at least 2 unique posters.
@@ -281,17 +282,18 @@ class AppQuery
   #   * name - name of the location
   #   * num_users - number of unique users who have posted to the location
   def top_locations_unique_users_sql
-    "SELECT '' AS name, 0 AS num_users FROM users WHERE 1=2"
+    "SELECT name, COUNT(DISTINCT user_id) AS num_users FROM locations,posts WHERE locations.id = posts.location_id GROUP BY location_id HAVING num_users > 1 ORDER BY num_users DESC LIMIT 5"
   end
 
   # Retrieve the top 5 users who follow the most locations, where each location has at least 2 posts
   # Retrieve at most 5 rows.
+	# Do not retrieve users who follow 0 locations.
   # Returns a string of the SQL query.
   # The resulting columns names must include (but are not limited to):
   #   * name - name of the user
   #   * num_locations - number of locations (has at least 2 posts) the user follows
   def top_users_locations_sql
-    "SELECT '' AS name, 0 AS num_locations FROM users WHERE 1=2"
+    "SELECT name, COUNT(location_id) AS num_locations FROM users,(SELECT * FROM locations_users WHERE EXISTS (SELECT location_id FROM ( SELECT location_id, COUNT(*) AS num_posts 		FROM posts GROUP BY location_id HAVING num_posts >1))) AS tbl WHERE users.id = tbl.user_id GROUP BY user_id  ORDER BY num_locations DESC LIMIT 5"
   end
 
 end
