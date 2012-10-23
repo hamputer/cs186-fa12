@@ -242,21 +242,38 @@ StrategyGetBuffer(BufferAccessStrategy strategy, bool *lock_held)
 		{
 			/* Run the "clock sweep" algorithm */
 			//trycounter = NBuffers;
-			if (StrategyControl->tail) {
-        resultIndex = StrategyControl->tail->buf_id;
+			buf = StrategyControl->tail;
+			bool found = FALSE;
+			while (buf) {
 				// only 1 buffer in linked list
-        if (StrategyControl->tail == StrategyControl->head) {
-          StrategyControl->tail = NULL;
-          StrategyControl->head = NULL;
+        if (buf == StrategyControl->head) {
+					LockBufHdr(buf);
+					if(buf->refcount == 0){
+						resultIndex = buf->buf_id;
+						found = TRUE;
+						break;
+					}
+          else{
+						StrategyControl->tail = NULL;
+		        StrategyControl->head = NULL;
+					}
         }
         else {
-          StrategyControl->tail = StrategyControl->tail->prev;
-          StrategyControl->tail->next = StrategyControl->head;
-          StrategyControl->head->prev = StrategyControl->tail;
+					LockBufHdr(buf);
+					if(buf->refcount == 0){
+						resultIndex = buf->buf_id;
+						found = TRUE;
+						break;
+					}
+          else{
+		        StrategyControl->tail = StrategyControl->tail->prev;
+		        StrategyControl->tail->next = StrategyControl->head;
+		        StrategyControl->head->prev = StrategyControl->tail;
+					}
         }
+				buf = StrategyControl->tail;
       }
-		  else
-				{
+				if(!found){
 					/*
 					 * We've scanned all the buffers without making any state changes,
 					 * so all the buffers are pinned (or were when we looked at them).
@@ -264,10 +281,12 @@ StrategyGetBuffer(BufferAccessStrategy strategy, bool *lock_held)
 					 * probably better to fail than to risk getting stuck in an
 					 * infinite loop.
 					 */
-					//UnlockBufHdr(buf);
+					UnlockBufHdr(buf);
 					elog(ERROR, "no unpinned buffers available");
-				}
-				//UnlockBufHdr(buf);
+					}
+
+				UnlockBufHdr(buf);
+				
 		
 		}
 		else if (BufferReplacementPolicy == POLICY_MRU)

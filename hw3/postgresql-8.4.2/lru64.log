@@ -1287,3 +1287,28 @@ STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
 LOG:  received smart shutdown request
 LOG:  shutting down
 LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 04:28:21 PDT
+LOG:  database system is ready to accept connections
+ERROR:  no unpinned buffers available at character 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 04:46:21 PDT
+LOG:  database system is ready to accept connections
+LOG:  GRADING: EVICT  0 at character 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  server process (PID 20353) was terminated by signal 11: Segmentation fault
+LOG:  terminating any other active server processes
+LOG:  all server processes terminated; reinitializing
+LOG:  database system was interrupted; last known up at 2012-10-23 04:48:03 PDT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  record with zero length at 0/54FBC4
+LOG:  redo is not required
+LOG:  database system is ready to accept connections
