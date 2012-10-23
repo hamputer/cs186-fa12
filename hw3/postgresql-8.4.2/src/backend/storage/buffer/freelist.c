@@ -57,6 +57,9 @@ typedef struct
 	 * your buffer replacement strategies here.
 	 */
 
+  BufferDesc* head;    /* Head of list of unpinned */
+  BufferDesc* tail;     /* Tail of list of unpinned */
+
 } BufferStrategyControl;
 
 /* Pointers to shared state */
@@ -237,47 +240,22 @@ StrategyGetBuffer(BufferAccessStrategy strategy, bool *lock_held)
 		 */
 		else if (BufferReplacementPolicy == POLICY_LRU)
 		{
-			elog(ERROR, "LRU unimplemented");
-		}
-		else if (BufferReplacementPolicy == POLICY_MRU)
-		{
 			/* Run the "clock sweep" algorithm */
-			trycounter = NBuffers;
-			for (;;)
-			{
-				bufIndex = StrategyControl->nextVictimBuffer;
-				buf = &BufferDescriptors[bufIndex];
-
-				/*
-				 * If the clock sweep hand has reached the end of the
-				 * buffer pool, start back at the beginning.
-				 */
-				if (++StrategyControl->nextVictimBuffer >= NBuffers)
-				{
-					StrategyControl->nextVictimBuffer = 0;
-					StrategyControl->completePasses++;
-				}
-
-				/*
-				 * If the buffer is pinned or has a nonzero usage_count, we cannot use
-				 * it; decrement the usage_count (unless pinned) and keep scanning.
-				 */
-				LockBufHdr(buf);
-				if (buf->refcount == 0)
-				{
-					if (buf->usage_count > 0)
-					{
-						buf->usage_count--;
-						trycounter = NBuffers;
-					}
-					else
-					{
-						/* Found a usable buffer */
-						resultIndex = bufIndex;
-						break;
-					}
-				}
-				else if (--trycounter == 0)
+			//trycounter = NBuffers;
+			if (StrategyControl->tail) {
+        resultIndex = StrategyControl->tail->buf_id;
+				// only 1 buffer in linked list
+        if (StrategyControl->tail == StrategyControl->head) {
+          StrategyControl->tail = NULL;
+          StrategyControl->head = NULL;
+        }
+        else {
+          StrategyControl->tail = StrategyControl->tail->prev;
+          StrategyControl->tail->next = StrategyControl->head;
+          StrategyControl->head->prev = StrategyControl->tail;
+        }
+      }
+		  else
 				{
 					/*
 					 * We've scanned all the buffers without making any state changes,
@@ -286,11 +264,15 @@ StrategyGetBuffer(BufferAccessStrategy strategy, bool *lock_held)
 					 * probably better to fail than to risk getting stuck in an
 					 * infinite loop.
 					 */
-					UnlockBufHdr(buf);
+					//UnlockBufHdr(buf);
 					elog(ERROR, "no unpinned buffers available");
 				}
-				UnlockBufHdr(buf);
-			}
+				//UnlockBufHdr(buf);
+		
+		}
+		else if (BufferReplacementPolicy == POLICY_MRU)
+		{
+			elog(ERROR, "MRU unimplemented");
 		}
 		else if (BufferReplacementPolicy == POLICY_2Q)
 		{
@@ -333,6 +315,23 @@ BufferUnpinned(int bufIndex)
    * StrategyControl global variable from inside this function.
    * This function was added by the GSIs.
 	 */
+  // When Head and Tail are NULL, i.e. no buffers in linked list
+  if (!(StrategyControl->head)) {
+    StrategyControl->head = &BufferDescriptors[bufIndex];
+    StrategyControl->tail = StrategyControl->head;
+    StrategyControl->head->next = StrategyControl->head;
+    StrategyControl->head->prev = StrategyControl->head;
+    StrategyControl->tail->next = StrategyControl->head;
+    StrategyControl->tail->prev = StrategyControl->head;
+  }
+  else {
+    buf = &BufferDescriptors[bufIndex];
+    buf->next = StrategyControl->head;
+    StrategyControl->head->prev = buf;
+    buf->prev = StrategyControl->tail;
+    StrategyControl->tail->next = buf;
+    StrategyControl->head = buf;
+  }
 
 	LWLockRelease(BufFreelistLock);
 }
@@ -467,6 +466,17 @@ StrategyInitialize(bool init)
 		StrategyControl->numBufferAllocs = 0;
 
 		/* CS186 TODO: Initialize any data you added to StrategyControlData here */
+    StrategyControl->tail = NULL;
+    StrategyControl->head = NULL;
+
+    /*    
+    if (BufferReplacementPolicy == POLICY_LRU) {
+       StrategyControl->nextVictimBuffer = StrategyControl->tail;
+    }
+    if (BufferReplacementPolicy == POLICY_MRU) {
+       StrategyControl->nextVictimBuffer = StrategyControl->head;
+    }
+    */
 	}
 	else
 		Assert(!init);

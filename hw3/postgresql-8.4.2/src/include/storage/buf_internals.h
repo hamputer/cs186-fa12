@@ -148,6 +148,9 @@ typedef struct sbufdesc
 	 * your buffer replacement strategies here.
 	 */
 
+  struct sbufdesc * next;     // Pointer to next ele in list
+  struct sbufdesc * prev;     // Pointer to prev ele in list
+
 } BufferDesc;
 
 #define BufferDescriptorGetBuffer(bdesc) ((bdesc)->buf_id + 1)

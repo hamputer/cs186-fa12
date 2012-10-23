@@ -13,3 +13,1277 @@ LOG:  database system was shut down at 2012-10-23 03:24:42 PDT
 LOG:  database system is ready to accept connections
 ERROR:  LRU unimplemented at character 15
 STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 03:27:49 PDT
+LOG:  database system is ready to accept connections
+ERROR:  LRU unimplemented at character 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 04:10:51 PDT
+LOG:  database system is ready to accept connections
+LOG:  GRADING: EVICT  0 at character 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.085072 elapsed 0.024001 user 0.008000 system sec
+	!	[0.028001 user 0.028001 sys total]
+	!	0/24 [144/216] filesystem blocks in/out
+	!	0/21 [0/846] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/113 [6/132] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:         53 read,          1 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 46 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 58 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.000016 elapsed 0.000000 user 0.000000 system sec
+	!	[0.032002 user 0.032002 sys total]
+	!	0/0 [352/240] filesystem blocks in/out
+	!	0/0 [0/903] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/0 [13/141] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.000014 elapsed 0.000000 user 0.000000 system sec
+	!	[0.032002 user 0.032002 sys total]
+	!	0/0 [352/248] filesystem blocks in/out
+	!	0/0 [0/903] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/0 [14/144] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.000014 elapsed 0.000000 user 0.000000 system sec
+	!	[0.032002 user 0.032002 sys total]
+	!	0/0 [352/248] filesystem blocks in/out
+	!	0/0 [0/903] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/0 [15/147] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 04:15:13 PDT
+LOG:  database system is ready to accept connections
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT  1
+TRAP: FailedAssertion("!(buf->refcount == 0)", File: "bufmgr.c", Line: 578)
+LOG:  server process (PID 15728) was terminated by signal 6: Aborted
+LOG:  terminating any other active server processes
+LOG:  all server processes terminated; reinitializing
+LOG:  database system was interrupted; last known up at 2012-10-23 04:15:46 PDT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  record with zero length at 0/54F960
+LOG:  redo is not required
+LOG:  database system is ready to accept connections
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT  1
+TRAP: FailedAssertion("!(buf->refcount == 0)", File: "bufmgr.c", Line: 578)
+LOG:  server process (PID 15735) was terminated by signal 6: Aborted
+LOG:  terminating any other active server processes
+LOG:  all server processes terminated; reinitializing
+LOG:  database system was interrupted; last known up at 2012-10-23 04:15:50 PDT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  record with zero length at 0/54F9A4
+LOG:  redo is not required
+LOG:  database system is ready to accept connections
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 04:16:34 PDT
+LOG:  database system is ready to accept connections
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT 12
+LOG:  GRADING: EVICT 13
+LOG:  GRADING: EVICT 11
+LOG:  GRADING: EVICT 14
+LOG:  GRADING: EVICT 15
+LOG:  GRADING: EVICT  0
+LOG:  GRADING: EVICT  7
+LOG:  GRADING: EVICT  2
+LOG:  GRADING: EVICT  3
+LOG:  GRADING: EVICT  4
+LOG:  GRADING: EVICT  5
+LOG:  GRADING: EVICT  8
+LOG:  GRADING: EVICT  6
+LOG:  GRADING: EVICT  1
+LOG:  GRADING: EVICT  9
+LOG:  GRADING: EVICT 10
+LOG:  GRADING: EVICT  1
+TRAP: FailedAssertion("!(buf->refcount == 0)", File: "bufmgr.c", Line: 578)
+LOG:  server process (PID 15752) was terminated by signal 6: Aborted
+LOG:  terminating any other active server processes
+LOG:  all server processes terminated; reinitializing
+LOG:  database system was interrupted; last known up at 2012-10-23 04:16:38 PDT
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  record with zero length at 0/54FA2C
+LOG:  redo is not required
+LOG:  database system is ready to accept connections
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 04:16:45 PDT
+LOG:  database system is ready to accept connections
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 04:17:02 PDT
+LOG:  database system is ready to accept connections
+LOG:  GRADING: EVICT  0 at character 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.075301 elapsed 0.008000 user 0.020002 system sec
+	!	[0.024001 user 0.048003 sys total]
+	!	0/8 [0/200] filesystem blocks in/out
+	!	0/20 [0/840] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/110 [1/132] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:         53 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.064211 elapsed 0.012001 user 0.016001 system sec
+	!	[0.036002 user 0.064004 sys total]
+	!	0/16 [0/216] filesystem blocks in/out
+	!	0/0 [0/843] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/109 [2/245] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:         53 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.074191 elapsed 0.020001 user 0.004000 system sec
+	!	[0.060003 user 0.068004 sys total]
+	!	0/8 [0/224] filesystem blocks in/out
+	!	0/0 [0/843] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/116 [3/366] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:         53 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 58 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 57 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.000014 elapsed 0.000000 user 0.000000 system sec
+	!	[0.060003 user 0.072004 sys total]
+	!	0/0 [0/232] filesystem blocks in/out
+	!	0/0 [0/897] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/0 [4/373] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.000014 elapsed 0.000000 user 0.000000 system sec
+	!	[0.060003 user 0.072004 sys total]
+	!	0/0 [0/232] filesystem blocks in/out
+	!	0/0 [0/897] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/0 [5/377] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.000014 elapsed 0.000000 user 0.000000 system sec
+	!	[0.064004 user 0.072004 sys total]
+	!	0/0 [0/248] filesystem blocks in/out
+	!	0/0 [0/897] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/0 [6/380] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
