@@ -1,0 +1,15 @@
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 03:12:35 PDT
+LOG:  database system is ready to accept connections
+ERROR:  relation "raw_r_tuples" does not exist at character 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+ERROR:  LRU unimplemented
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  using buffer replacement policy: lru
+LOG:  database system was shut down at 2012-10-23 03:24:42 PDT
+LOG:  database system is ready to accept connections
+ERROR:  LRU unimplemented at character 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
