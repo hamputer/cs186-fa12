@@ -147,7 +147,7 @@ typedef struct sbufdesc
 	/* CS186 TODO: Add any data you need to manage in order to implement
 	 * your buffer replacement strategies here.
 	 */
-
+	int queueTag;
   struct sbufdesc * next;     // Pointer to next ele in list
   struct sbufdesc * prev;     // Pointer to prev ele in list
 

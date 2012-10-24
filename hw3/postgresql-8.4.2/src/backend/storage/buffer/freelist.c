@@ -57,8 +57,13 @@ typedef struct
 	 * your buffer replacement strategies here.
 	 */
 
-  BufferDesc* head;    /* Head of list of unpinned */
-  BufferDesc* tail;     /* Tail of list of unpinned */
+  BufferDesc* head;    /* Head of LRU list of unpinned */
+  BufferDesc* tail;     /* Tail of LRU list of unpinned */
+
+  BufferDesc* head2Q;
+  BufferDesc* tail2Q;
+
+  int sizeA1;
 
 } BufferStrategyControl;
 
@@ -240,62 +245,83 @@ StrategyGetBuffer(BufferAccessStrategy strategy, bool *lock_held)
 		 */
 		else if (BufferReplacementPolicy == POLICY_LRU)
 		{
-			/* Run the "clock sweep" algorithm */
-			//trycounter = NBuffers;
-			buf = StrategyControl->tail;
-			bool found = FALSE;
-			while (buf) {
-				// only 1 buffer in linked list
-        if (buf == StrategyControl->head) {
-					LockBufHdr(buf);
-					if(buf->refcount == 0){
+      bool found = FALSE;
+      buf = StrategyControl->tail;
+      if(buf){
+        if(buf->refcount == 0){
 						resultIndex = buf->buf_id;
 						found = TRUE;
-						break;
-					}
-          else{
-						StrategyControl->tail = NULL;
-		        StrategyControl->head = NULL;
-					}
+				}
+        else{
+          buf = StrategyControl->tail->prev;
+          while (buf != StrategyControl->tail) {
+					  if(buf->refcount == 0){
+						  resultIndex = buf->buf_id;
+						  found = TRUE;
+						  break;
+					  }
+            else{
+		          buf = buf->prev;
+			      }
+          }			    
         }
-        else {
-					LockBufHdr(buf);
-					if(buf->refcount == 0){
-						resultIndex = buf->buf_id;
-						found = TRUE;
-						break;
-					}
-          else{
-		        StrategyControl->tail = StrategyControl->tail->prev;
-		        StrategyControl->tail->next = StrategyControl->head;
-		        StrategyControl->head->prev = StrategyControl->tail;
-					}
-        }
-				buf = StrategyControl->tail;
-      }
-				if(!found){
-					/*
-					 * We've scanned all the buffers without making any state changes,
-					 * so all the buffers are pinned (or were when we looked at them).
-					 * We could hope that someone will free one eventually, but it's
-					 * probably better to fail than to risk getting stuck in an
-					 * infinite loop.
-					 */
-					UnlockBufHdr(buf);
-					elog(ERROR, "no unpinned buffers available");
-					}
-
-				UnlockBufHdr(buf);
-				
+      }   
+			
+			if(!found){
+				elog(ERROR, "no unpinned buffers available");
+			}
 		
 		}
 		else if (BufferReplacementPolicy == POLICY_MRU)
 		{
-			elog(ERROR, "MRU unimplemented");
+      buf = StrategyControl->head;
+      bool found;
+			found = FALSE;
+      if(buf){
+        if(buf->refcount == 0){
+						resultIndex = buf->buf_id;
+						found = TRUE;
+				}
+        else{
+          
+          buf = StrategyControl->head->next;
+          while (buf != StrategyControl->head) {
+					  if(buf->refcount == 0){
+						  resultIndex = buf->buf_id;
+						  found = TRUE;
+						  break;
+					  }
+            else{
+		          buf = buf->next;
+			      }
+          }			    
+        }
+      }   
+			
+			if(!found){
+				elog(ERROR, "no unpinned buffers available");
+			}
+
 		}
 		else if (BufferReplacementPolicy == POLICY_2Q)
 		{
-			elog(ERROR, "2Q unimplemented");
+      elog(LOG,"POLICY_2Q");
+      int threshhold;
+			threshhold = NBuffers/2 ;
+      if (StrategyControl->sizeA1 >= threshhold || !(StrategyControl->head)) {
+        resultIndex = StrategyHelper(&buf, &(StrategyControl->head2Q), &(StrategyControl->tail2Q));
+				elog(LOG,"size of list: %d", size_of_list(&(StrategyControl->head2Q)));
+				elog(LOG,"size of A1: %d", StrategyControl->sizeA1);
+				elog(LOG,"A1 replace");
+      }
+      else {
+        resultIndex = StrategyHelper(&buf, &(StrategyControl->head), &(StrategyControl->tail));
+				elog(LOG,"AM replace");
+      }
+      if (resultIndex == -1) {
+          elog(ERROR, "no unpinned buffers available");
+      }
+
 		}
 		else
 		{
@@ -314,6 +340,82 @@ StrategyGetBuffer(BufferAccessStrategy strategy, bool *lock_held)
 	
 	return &BufferDescriptors[resultIndex];
 }
+
+int
+size_of_list(BufferDesc **head) {
+  if(!(*head))
+    return 0;
+  BufferDesc *copy = (*head)->next;
+	elog(LOG, "first, head->next->bufid = %d", (*head)->next->buf_id);
+  int count = 1;
+  
+  
+  while (copy != (*head)){
+		//elog(LOG, "second, head->next->bufid = %d", (*head)->next->buf_id);
+    count++;
+    copy = copy->next;
+  }
+  return count;
+}
+
+int
+StrategyHelper(volatile BufferDesc** buf, BufferDesc** head, BufferDesc** tail) {
+  int resultIndex = -1;
+  (*buf) = (*tail);
+  if((*buf)){
+    // Deleting the tail ie find refcount == 0 on first try
+    if((*buf)->refcount == 0){
+			resultIndex = (*buf)->buf_id;
+      elog(LOG,"First IF TAILLLLLLLLLLLLLLLLLLLLLLLL");
+      if ((*head) == (*tail)) {
+        (*head) = NULL;
+        (*tail) = NULL;
+        elog(LOG,"NULLLLLLLLLLLLLLLLL");
+      }
+      else {
+        (*buf)->prev->next = (*buf)->next;
+        (*buf)->next->prev = (*buf)->prev;
+        (*tail) = (*buf)->prev;
+        elog(LOG,"NNOOOOOOT   NULLLLLLLLLLLLLLLLL");
+      }
+      (*buf)->prev = NULL;
+      (*buf)->next = NULL;
+			(*buf)->queueTag = 0;
+      StrategyControl->sizeA1--;
+     
+		}
+    else{
+      (*buf) = (*tail)->prev;
+      
+      elog(LOG,"Buff exists: %s", ((*buf))?"true":"false");
+      while ((*buf) != (*tail)) {
+        elog(LOG,"IN LOOP OUTSIDE OF IFFFFFFFFFFFFFFFFFFFFFF");
+				if((*buf)->refcount == 0){
+					elog(LOG,"ASDASDASDASDXXXXXX");
+					resultIndex = (*buf)->buf_id;
+          elog(LOG, (*buf)->prev); 
+          elog(LOG,"ASDASDASDASDXXXXXX2222222222222");
+          
+          (*buf)->prev->next = (*buf)->next;
+          (*buf)->next->prev = (*buf)->prev;
+          if ((*buf) == (*head)) {
+            (*head) = (*buf)->next;
+          }
+          (*buf)->prev = NULL;
+          (*buf)->next = NULL;
+					(*buf)->queueTag = 0;
+
+          StrategyControl->sizeA1--;
+					break;
+				}
+		    (*buf) = (*buf)->prev;
+      }
+          		    
+    }
+  }   
+	return resultIndex;
+}
+
 
 /*
  * CS186: Called when the specified buffer is unpinned and becomes
@@ -334,25 +436,99 @@ BufferUnpinned(int bufIndex)
    * StrategyControl global variable from inside this function.
    * This function was added by the GSIs.
 	 */
-  // When Head and Tail are NULL, i.e. no buffers in linked list
-  if (!(StrategyControl->head)) {
-    StrategyControl->head = &BufferDescriptors[bufIndex];
-    StrategyControl->tail = StrategyControl->head;
-    StrategyControl->head->next = StrategyControl->head;
-    StrategyControl->head->prev = StrategyControl->head;
-    StrategyControl->tail->next = StrategyControl->head;
-    StrategyControl->tail->prev = StrategyControl->head;
+
+  if (BufferReplacementPolicy == POLICY_LRU || BufferReplacementPolicy == POLICY_MRU) {
+    UnpinnedHelper(&buf, &(StrategyControl->head), &(StrategyControl->tail)); 
   }
-  else {
-    buf = &BufferDescriptors[bufIndex];
-    buf->next = StrategyControl->head;
-    StrategyControl->head->prev = buf;
-    buf->prev = StrategyControl->tail;
-    StrategyControl->tail->next = buf;
-    StrategyControl->head = buf;
+  else if (BufferReplacementPolicy == POLICY_2Q) {
+    if (buf->queueTag == 2) {
+      UnpinnedHelper(&buf, &(StrategyControl->head), &(StrategyControl->tail));
+    }
+    else if (buf->queueTag == 1) {
+      // Removes buf from A1 queue
+      if (StrategyControl->head2Q == StrategyControl->tail2Q) {
+        StrategyControl->head2Q = NULL;
+        StrategyControl->tail2Q = NULL;
+      }
+      else {
+        buf->prev->next = buf->next;
+        buf->next->prev = buf->prev;
+			
+				if (buf == StrategyControl->head2Q) {
+            StrategyControl->head2Q = buf->next;
+      	}
+				else if (buf == StrategyControl->tail2Q) {
+           StrategyControl->tail2Q= buf->prev;
+      	}
+      }
+			
+      // Put buff on Am queue
+      buf->queueTag = 2;
+      buf->next = NULL;
+      buf->prev = NULL;
+      UnpinnedHelper(&buf, &(StrategyControl->head), &(StrategyControl->tail));
+      StrategyControl->sizeA1--;
+    }
+    // first time unpinning
+    else  {
+      buf->queueTag = 1; 
+      UnpinnedHelper(&buf, &(StrategyControl->head2Q), &(StrategyControl->tail2Q));
+      
+    }
   }
+  
 
 	LWLockRelease(BufFreelistLock);
+}
+
+void
+UnpinnedHelper(BufferDesc** buf, BufferDesc** head, BufferDesc** tail) {
+  // When Head and Tail are NULL, i.e. no buffers in linked list
+  if (!(*head)) {
+    (*head) = (*buf);
+    (*tail) = (*buf);
+    (*head)->next = (*buf);
+    (*head)->prev = (*buf);
+    (*tail)->next = (*buf);
+    (*tail)->prev = (*buf);
+		if((*buf)->queueTag == 1)
+			StrategyControl->sizeA1++;
+  }
+  else {
+    // Put buf in front of list, 1st time it enters
+    if (!((*buf)->prev) && !((*buf)->next)){
+      (*buf)->next = (*head);
+      (*head)->prev = (*buf);
+      (*buf)->prev = (*tail);
+      (*tail)->next = (*buf);
+      (*head) = (*buf);
+			if((*buf)->queueTag == 1)			
+				StrategyControl->sizeA1++;
+    }
+    // If buf is already in the list
+    else{
+      if ((*head) == (*buf)) {
+        // do nothing
+      }
+      else if ((*tail) == (*buf)) {
+        (*tail) = (*tail)->prev;
+        (*head) = (*buf);
+      }
+      else {
+        (*buf)->prev->next = (*buf)->next;
+        (*buf)->next->prev = (*buf)->prev;
+
+        // same code as if we're inserting it in list
+        (*buf)->next = (*head);
+        (*head)->prev = (*buf);
+        (*buf)->prev = (*tail);
+        (*tail)->next = (*buf);
+        (*head) = (*buf);
+        
+      }
+    }
+  }
+
 }
 
 
@@ -487,6 +663,11 @@ StrategyInitialize(bool init)
 		/* CS186 TODO: Initialize any data you added to StrategyControlData here */
     StrategyControl->tail = NULL;
     StrategyControl->head = NULL;
+
+    StrategyControl->tail2Q = NULL;
+    StrategyControl->head2Q = NULL;
+
+    StrategyControl->sizeA1 = 0;
 
     /*    
     if (BufferReplacementPolicy == POLICY_LRU) {
@@ -696,3 +877,4 @@ get_buffer_policy_str(PolicyKind policy)
 			return "unknown";
 	}
 }
+

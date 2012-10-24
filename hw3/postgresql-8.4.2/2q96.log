@@ -1,0 +1,347 @@
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 17955) running in data directory "/home/ubuntu/pgsql/data"?
+LOG:  using buffer replacement policy: 2q
+LOG:  database system was shut down at 2012-10-24 16:12:52 PDT
+LOG:  database system is ready to accept connections
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 25
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 28
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  4
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  5
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 11
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  7
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 32
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 34
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  3
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 17
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  2
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  9
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  POLICY_2Q
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  First IF TAILLLLLLLLLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  NNOOOOOOT   NULLLLLLLLLLLLLLLLL
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  AM replace
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.102692 elapsed 0.012001 user 0.024001 system sec
+	!	[0.032002 user 0.040002 sys total]
+	!	0/16 [0/200] filesystem blocks in/out
+	!	0/70 [0/892] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/205 [1/217] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:         53 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.059542 elapsed 0.012000 user 0.012001 system sec
+	!	[0.044002 user 0.052003 sys total]
+	!	0/0 [0/200] filesystem blocks in/out
+	!	0/0 [0/896] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/53 [2/274] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 100.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.060981 elapsed 0.012001 user 0.012001 system sec
+	!	[0.056003 user 0.068004 sys total]
+	!	0/0 [0/200] filesystem blocks in/out
+	!	0/0 [0/896] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/50 [3/328] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 100.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
