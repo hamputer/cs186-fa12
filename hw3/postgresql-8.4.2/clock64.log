@@ -217,3 +217,1453 @@ STATEMENT:  SELECT * FROM raw_r_tuples;
 LOG:  received smart shutdown request
 LOG:  shutting down
 LOG:  database system is shut down
+LOG:  using buffer replacement policy: clock
+LOG:  database system was shut down at 2012-10-24 16:47:59 PDT
+LOG:  database system is ready to accept connections
+LOG:  GRADING: EVICT  4
+STATEMENT:  COPY raw_r_tuples FROM '[full path to your repo here]/fa12/hw3/test/R' DELIMITER ',';
+ERROR:  could not open file "[full path to your repo here]/fa12/hw3/test/R" for reading: No such file or directory
+STATEMENT:  COPY raw_r_tuples FROM '[full path to your repo here]/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  5
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 15
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 22
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 31
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 33
+CONTEXT:  COPY raw_r_tuples, line 1: "R,1,754,1081,430,/230.41.38.224,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 36
+CONTEXT:  COPY raw_r_tuples, line 1: "R,1,754,1081,430,/230.41.38.224,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 38
+CONTEXT:  COPY raw_r_tuples, line 72: "R,72,601,14,1437,/150.175.127.20,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 40
+CONTEXT:  COPY raw_r_tuples, line 72: "R,72,601,14,1437,/150.175.127.20,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 44
+CONTEXT:  COPY raw_r_tuples, line 164: "R,164,192,313,881,/207.22.115.222,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 47
+CONTEXT:  COPY raw_r_tuples, line 256: "R,256,385,1393,1410,/32.7.209.35,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 51
+CONTEXT:  COPY raw_r_tuples, line 348: "R,348,1180,1255,112,/60.146.89.193,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 52
+CONTEXT:  COPY raw_r_tuples, line 440: "R,440,318,211,206,/187.227.227.31,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 53
+CONTEXT:  COPY raw_r_tuples, line 532: "R,532,637,214,1392,/145.48.206.235,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 54
+CONTEXT:  COPY raw_r_tuples, line 624: "R,624,1065,12,1322,/239.5.228.118,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 55
+CONTEXT:  COPY raw_r_tuples, line 716: "R,716,65,370,614,/96.233.221.162,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 56
+CONTEXT:  COPY raw_r_tuples, line 808: "R,808,399,1428,1196,/229.15.155.23,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 57
+CONTEXT:  COPY raw_r_tuples, line 900: "R,900,246,1500,289,/98.168.17.116,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 59
+CONTEXT:  COPY raw_r_tuples, line 992: "R,992,74,750,698,/9.117.236.91,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 60
+CONTEXT:  COPY raw_r_tuples, line 1084: "R,1084,1198,234,1201,/104.123.61.130,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  0
+CONTEXT:  COPY raw_r_tuples, line 1176: "R,1176,1486,1381,90,/52.199.170.102,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  6
+CONTEXT:  COPY raw_r_tuples, line 1268: "R,1268,965,1467,1042,/208.83.118.130,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  8
+CONTEXT:  COPY raw_r_tuples, line 1360: "R,1360,1406,548,795,/81.32.36.240,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 25
+CONTEXT:  COPY raw_r_tuples, line 1452: "R,1452,1065,885,1168,/34.231.32.252,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 26
+CONTEXT:  COPY raw_r_tuples, line 1544: "R,1544,1157,523,32,/142.69.186.122,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 28
+CONTEXT:  COPY raw_r_tuples, line 1636: "R,1636,254,549,1347,/123.65.64.157,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 58
+CONTEXT:  COPY raw_r_tuples, line 1728: "R,1728,516,356,791,/220.245.31.165,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 61
+CONTEXT:  COPY raw_r_tuples, line 1820: "R,1820,572,1160,1234,/198.253.252.121,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 62
+CONTEXT:  COPY raw_r_tuples, line 1912: "R,1912,282,999,212,/171.86.139.189,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 63
+CONTEXT:  COPY raw_r_tuples, line 2004: "R,2004,143,1122,342,/95.229.49.206,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  1
+CONTEXT:  COPY raw_r_tuples, line 2096: "R,2096,823,923,488,/200.88.33.238,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  4
+CONTEXT:  COPY raw_r_tuples, line 2188: "R,2188,653,994,692,/4.11.138.174,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  5
+CONTEXT:  COPY raw_r_tuples, line 2280: "R,2280,1292,1187,358,/100.173.144.230,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT  7
+CONTEXT:  COPY raw_r_tuples, line 2372: "R,2372,56,41,1307,/202.36.101.206,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 22
+CONTEXT:  COPY raw_r_tuples, line 64: "S,64,309,800,646,/71.43.2.116,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 32
+CONTEXT:  COPY raw_r_tuples, line 156: "S,156,533,44,793,/157.82.220.108,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 34
+CONTEXT:  COPY raw_r_tuples, line 248: "S,248,493,527,1114,/123.142.48.119,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 35
+CONTEXT:  COPY raw_r_tuples, line 340: "S,340,453,1164,525,/65.243.175.131,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 36
+CONTEXT:  COPY raw_r_tuples, line 432: "S,432,217,1005,835,/100.91.207.188,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 37
+CONTEXT:  COPY raw_r_tuples, line 524: "S,524,1130,1176,70,/159.170.165.23,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 40
+CONTEXT:  COPY raw_r_tuples, line 616: "S,616,1025,61,1065,/89.100.75.160,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 44
+CONTEXT:  COPY raw_r_tuples, line 708: "S,708,857,549,660,/201.202.89.37,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 47
+CONTEXT:  COPY raw_r_tuples, line 800: "S,800,719,712,340,/18.50.197.92,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 48
+CONTEXT:  COPY raw_r_tuples, line 892: "S,892,8,922,307,/153.53.247.40,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 49
+CONTEXT:  COPY raw_r_tuples, line 984: "S,984,21,1104,184,/226.218.80.242,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 51
+CONTEXT:  COPY raw_r_tuples, line 1075: "S,1075,524,818,427,/144.85.47.143,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 52
+CONTEXT:  COPY raw_r_tuples, line 1167: "S,1167,640,832,565,/20.147.10.139,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 53
+CONTEXT:  COPY raw_r_tuples, line 1259: "S,1259,766,896,234,/94.150.50.7,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 54
+CONTEXT:  COPY raw_r_tuples, line 1351: "S,1351,298,751,1103,/166.15.241.20,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 55
+CONTEXT:  COPY raw_r_tuples, line 1443: "S,1443,1162,32,464,/109.31.105.129,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 56
+CONTEXT:  COPY raw_r_tuples, line 1535: "S,1535,137,170,1170,/189.246.202.223,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 57
+CONTEXT:  COPY raw_r_tuples, line 1627: "S,1627,847,265,1190,/79.214.200.198,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 59
+CONTEXT:  COPY raw_r_tuples, line 1719: "S,1719,137,11,248,/219.112.237.140,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 60
+CONTEXT:  COPY raw_r_tuples, line 1811: "S,1811,745,419,1007,/253.113.233.117,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT  0
+CONTEXT:  COPY raw_r_tuples, line 1903: "S,1903,236,611,702,/249.26.27.3,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT  6
+CONTEXT:  COPY raw_r_tuples, line 1995: "S,1995,607,877,388,/138.23.23.122,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT  8
+CONTEXT:  COPY raw_r_tuples, line 2087: "S,2087,768,1161,707,/234.202.166.64,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 10
+CONTEXT:  COPY raw_r_tuples, line 2179: "S,2179,525,357,477,/213.194.187.77,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 12
+CONTEXT:  COPY raw_r_tuples, line 2271: "S,2271,482,628,183,/223.89.45.2,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 25
+CONTEXT:  COPY raw_r_tuples, line 2363: "S,2363,149,1004,37,/117.31.111.136,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 28
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 31
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  2
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  3
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  4
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  5
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  7
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  9
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 11
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 14
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 17
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 32
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 34
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 36
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 40
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 42
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 43
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 44
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 45
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 47
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 51
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 52
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 53
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 54
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 55
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 59
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 25
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  2
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  3
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  4
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  5
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  7
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  9
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 11
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 14
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 17
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 31
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 32
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 34
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 36
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 40
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 42
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 43
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 44
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 45
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 47
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 51
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 52
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 53
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 54
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.193265 elapsed 0.020001 user 0.044003 system sec
+	!	[0.044002 user 0.116007 sys total]
+	!	0/16 [600/2160] filesystem blocks in/out
+	!	0/10 [1/915] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/206 [66/315] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:        105 read,          6 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 55
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 59
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 25
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  2
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  3
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  4
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  5
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  7
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  9
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 11
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 14
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 17
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 31
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 32
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 33
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 34
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 36
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 38
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 40
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 42
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 43
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 44
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 45
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 47
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 51
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 52
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 53
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 54
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 55
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 59
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 25
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 28
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  2
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  3
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  4
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  5
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  7
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  9
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 11
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 14
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 17
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 31
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.210740 elapsed 0.028002 user 0.044003 system sec
+	!	[0.072004 user 0.164010 sys total]
+	!	0/32 [600/2192] filesystem blocks in/out
+	!	0/0 [1/916] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/218 [67/536] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:        105 read,         47 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 32
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 33
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 34
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 36
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 38
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 40
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 42
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 43
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 44
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 45
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 47
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 51
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 52
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 53
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 54
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 55
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 59
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 25
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 28
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  2
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  3
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  4
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  5
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  7
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  9
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 11
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 14
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 15
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 17
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 31
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 32
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 33
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 34
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 36
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 38
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 40
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 42
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 43
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 44
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 45
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 47
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 51
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 52
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 53
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 54
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 55
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 59
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 25
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 28
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.193167 elapsed 0.020001 user 0.036002 system sec
+	!	[0.100006 user 0.200012 sys total]
+	!	0/16 [600/2208] filesystem blocks in/out
+	!	0/0 [1/916] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/208 [68/747] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:        105 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  2 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  3 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  4 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  5 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  7 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  9 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 11 at character 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 14
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 15
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 17
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 31
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 32
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 33
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.000015 elapsed 0.000000 user 0.000000 system sec
+	!	[0.104006 user 0.204012 sys total]
+	!	0/0 [600/2208] filesystem blocks in/out
+	!	0/0 [1/963] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/0 [69/754] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 34
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 35
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 36
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 37
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 38
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 40
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 41
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 42
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 43
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 44
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+ERROR:  relation "raw_s_tuples" already exists
+STATEMENT:  CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+ERROR:  syntax error at or near "CREATE" at character 25
+STATEMENT:  DROP TABLE raw_s_tuples
+	CREATE TABLE raw_s_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 45
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 47
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 51
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 52
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 53
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 54
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 55
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 56
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 57
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 59
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 60
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 25
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 26
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 28
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 39
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 46
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 58
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 14
+STATEMENT:  DROP TABLE raw_s_tuples;
+LOG:  GRADING: EVICT 15
+STATEMENT:  DROP TABLE raw_r_tuples;
+LOG:  GRADING: EVICT 17
+STATEMENT:  DROP TABLE raw_r_tuples;
+LOG:  GRADING: EVICT 18
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 19
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 20
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 21
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 22
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 23
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 27
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 29
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 31
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 32
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 33
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 34
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 35
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 37
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 38
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 41
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 42
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 48
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 53
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 57
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 16
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 25
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 26
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 28
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 30
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 36
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 44
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 46
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 61
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+LOG:  GRADING: EVICT 62
+STATEMENT:  CREATE TABLE raw_r_tuples (tname varchar(2), pkey int, num2 int, num3 int, num1 int, node varchar(16), inserttime float8, lifetime float8, testname varchar(64));
+ERROR:  could not open file "[full path to your repo here]/fa12/hw3/test/R" for reading: No such file or directory
+STATEMENT:  COPY raw_r_tuples FROM '[full path to your repo here]/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 13
+CONTEXT:  COPY raw_r_tuples, line 1: "R,1,754,1081,430,/230.41.38.224,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 15
+CONTEXT:  COPY raw_r_tuples, line 93: "R,93,14,584,21,/124.18.232.100,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 17
+CONTEXT:  COPY raw_r_tuples, line 93: "R,93,14,584,21,/124.18.232.100,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 18
+CONTEXT:  COPY raw_r_tuples, line 93: "R,93,14,584,21,/124.18.232.100,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 20
+CONTEXT:  COPY raw_r_tuples, line 185: "R,185,1071,1437,1010,/10.53.78.79,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 21
+CONTEXT:  COPY raw_r_tuples, line 277: "R,277,925,273,1092,/102.228.236.116,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 22
+CONTEXT:  COPY raw_r_tuples, line 369: "R,369,235,416,1443,/98.123.80.129,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 29
+CONTEXT:  COPY raw_r_tuples, line 461: "R,461,1130,1034,315,/53.125.225.163,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 31
+CONTEXT:  COPY raw_r_tuples, line 553: "R,553,1322,892,1286,/184.15.56.62,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 32
+CONTEXT:  COPY raw_r_tuples, line 645: "R,645,672,695,678,/53.74.83.117,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 35
+CONTEXT:  COPY raw_r_tuples, line 737: "R,737,1417,1111,1132,/101.204.70.240,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 37
+CONTEXT:  COPY raw_r_tuples, line 829: "R,829,667,233,812,/176.22.173.175,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 38
+CONTEXT:  COPY raw_r_tuples, line 921: "R,921,1467,1338,133,/232.195.24.109,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 41
+CONTEXT:  COPY raw_r_tuples, line 1013: "R,1013,932,956,1359,/45.107.114.88,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 42
+CONTEXT:  COPY raw_r_tuples, line 1105: "R,1105,252,855,937,/206.129.250.197,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 48
+CONTEXT:  COPY raw_r_tuples, line 1197: "R,1197,335,1082,3,/189.69.105.255,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 53
+CONTEXT:  COPY raw_r_tuples, line 1289: "R,1289,896,956,317,/134.83.28.25,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 12
+CONTEXT:  COPY raw_r_tuples, line 1381: "R,1381,290,1134,1045,/173.193.95.186,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 14
+CONTEXT:  COPY raw_r_tuples, line 1473: "R,1473,1320,1300,1,/56.75.206.241,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 36
+CONTEXT:  COPY raw_r_tuples, line 1565: "R,1565,26,3,956,/198.204.166.224,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 39
+CONTEXT:  COPY raw_r_tuples, line 1657: "R,1657,976,801,649,/140.52.85.145,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 44
+CONTEXT:  COPY raw_r_tuples, line 1749: "R,1749,1296,1273,185,/42.137.163.122,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 45
+CONTEXT:  COPY raw_r_tuples, line 1841: "R,1841,1094,704,1463,/62.45.33.192,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 46
+CONTEXT:  COPY raw_r_tuples, line 1933: "R,1933,234,621,842,/141.241.123.117,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 13
+CONTEXT:  COPY raw_r_tuples, line 2025: "R,2025,692,1385,465,/193.19.221.2,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 18
+CONTEXT:  COPY raw_r_tuples, line 2117: "R,2117,696,384,320,/19.33.254.123,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 20
+CONTEXT:  COPY raw_r_tuples, line 2209: "R,2209,1327,1437,393,/114.56.118.212,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 21
+CONTEXT:  COPY raw_r_tuples, line 2301: "R,2301,611,790,1269,/93.17.165.9,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 22
+CONTEXT:  COPY raw_r_tuples, line 2393: "R,2393,1068,559,314,/124.116.151.190,900.0,6000.0,RRRR"
+STATEMENT:  COPY raw_r_tuples FROM '/home/ubuntu/fa12/hw3/test/R' DELIMITER ',';
+LOG:  GRADING: EVICT 29
+CONTEXT:  COPY raw_s_tuples, line 1: "S,1,722,866,249,/218.249.80.25,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 31
+CONTEXT:  COPY raw_s_tuples, line 93: "S,93,109,795,258,/76.139.158.23,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 32
+CONTEXT:  COPY raw_s_tuples, line 93: "S,93,109,795,258,/76.139.158.23,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 35
+CONTEXT:  COPY raw_s_tuples, line 93: "S,93,109,795,258,/76.139.158.23,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 37
+CONTEXT:  COPY raw_s_tuples, line 185: "S,185,1102,1106,176,/245.18.237.147,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 38
+CONTEXT:  COPY raw_s_tuples, line 277: "S,277,870,678,699,/152.230.187.108,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 41
+CONTEXT:  COPY raw_s_tuples, line 369: "S,369,337,739,795,/50.129.73.134,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 42
+CONTEXT:  COPY raw_s_tuples, line 460: "S,460,821,1079,156,/219.153.226.31,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 48
+CONTEXT:  COPY raw_s_tuples, line 552: "S,552,537,988,179,/121.96.131.63,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 49
+CONTEXT:  COPY raw_s_tuples, line 644: "S,644,267,55,931,/56.114.125.111,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 50
+CONTEXT:  COPY raw_s_tuples, line 736: "S,736,1200,663,625,/201.255.142.198,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 53
+CONTEXT:  COPY raw_s_tuples, line 828: "S,828,956,39,745,/115.83.31.208,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 61
+CONTEXT:  COPY raw_s_tuples, line 920: "S,920,678,966,392,/57.216.143.212,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 62
+CONTEXT:  COPY raw_s_tuples, line 1012: "S,1012,85,1077,1167,/198.109.96.48,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 12
+CONTEXT:  COPY raw_s_tuples, line 1104: "S,1104,231,515,797,/160.228.164.74,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 14
+CONTEXT:  COPY raw_s_tuples, line 1196: "S,1196,519,201,652,/192.230.202.26,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 19
+CONTEXT:  COPY raw_s_tuples, line 1288: "S,1288,650,653,581,/7.36.103.12,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 24
+CONTEXT:  COPY raw_s_tuples, line 1380: "S,1380,282,1027,440,/196.45.180.56,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 33
+CONTEXT:  COPY raw_s_tuples, line 1472: "S,1472,471,1114,788,/190.168.55.40,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 34
+CONTEXT:  COPY raw_s_tuples, line 1564: "S,1564,672,476,630,/183.135.35.46,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 36
+CONTEXT:  COPY raw_s_tuples, line 1655: "S,1655,1096,502,1100,/62.106.154.12,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 39
+CONTEXT:  COPY raw_s_tuples, line 1747: "S,1747,599,370,557,/47.212.77.69,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 44
+CONTEXT:  COPY raw_s_tuples, line 1839: "S,1839,863,1039,1084,/195.30.140.143,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 45
+CONTEXT:  COPY raw_s_tuples, line 1931: "S,1931,241,427,230,/220.209.117.214,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 46
+CONTEXT:  COPY raw_s_tuples, line 2023: "S,2023,599,925,3,/175.63.19.234,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 47
+CONTEXT:  COPY raw_s_tuples, line 2115: "S,2115,162,119,455,/34.108.187.152,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 52
+CONTEXT:  COPY raw_s_tuples, line 2207: "S,2207,99,36,19,/2.252.153.190,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 55
+CONTEXT:  COPY raw_s_tuples, line 2299: "S,2299,501,635,344,/202.151.168.49,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 58
+CONTEXT:  COPY raw_s_tuples, line 2391: "S,2391,393,248,1159,/51.41.213.212,900.0,6000.0,SSSS"
+STATEMENT:  COPY raw_s_tuples FROM '/home/ubuntu/fa12/hw3/test/S' DELIMITER ',';
+LOG:  GRADING: EVICT 60
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 63
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  1
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  6
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 13
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 38
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 42
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 51
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 53
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT  8
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 10
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 12
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 14
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.039952 elapsed 0.016001 user 0.004000 system sec
+	!	[0.144009 user 0.268016 sys total]
+	!	0/48 [1584/4576] filesystem blocks in/out
+	!	0/0 [1/1050] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/52 [180/929] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:         27 read,          7 written, buffer hit rate = 0.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.017907 elapsed 0.012000 user 0.000000 system sec
+	!	[0.156009 user 0.268016 sys total]
+	!	0/0 [1584/4584] filesystem blocks in/out
+	!	0/0 [1/1050] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/29 [181/961] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 100.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	0.018316 elapsed 0.004001 user 0.008000 system sec
+	!	[0.160010 user 0.280017 sys total]
+	!	0/0 [1584/4584] filesystem blocks in/out
+	!	0/0 [1/1050] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/25 [182/990] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:          0 read,          0 written, buffer hit rate = 100.00%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples;
+LOG:  GRADING: EVICT 16
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 19
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 23
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 24
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 25
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 26
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 27
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 28
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 33
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 34
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 36
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 39
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 40
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 43
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 44
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 45
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 46
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 47
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 52
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 54
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 55
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 56
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 57
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 58
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 59
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 18
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 20
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 21
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 22
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 29
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 30
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 35
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 37
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 38
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 41
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 42
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 48
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 49
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 50
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 51
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 53
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 61
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT 62
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  0
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  2
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  GRADING: EVICT  3
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  EXECUTOR STATISTICS
+DETAIL:  ! system usage stats:
+	!	1.495228 elapsed 1.052065 user 0.016001 system sec
+	!	[1.212075 user 0.296018 sys total]
+	!	0/40 [1584/4624] filesystem blocks in/out
+	!	0/4 [1/1055] page faults/reclaims, 0 [0] swaps
+	!	0 [0] signals rcvd, 0/0 [0/0] messages rcvd/sent
+	!	0/271 [183/1264] voluntary/involuntary context switches
+	! buffer usage stats:
+	!	Shared blocks:         46 read,          2 written, buffer hit rate = 99.93%
+	!	Local  blocks:          0 read,          0 written, buffer hit rate = 0.00%
+	!	Direct blocks:          0 read,          0 written
+STATEMENT:  SELECT * FROM raw_r_tuples r, raw_s_tuples s WHERE r.pkey = s.pkey;
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
